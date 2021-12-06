@@ -337,7 +337,11 @@
 
     window.onscroll=function(e)
     {
-        if(window.scrollY>=tnh+ibh)
+       if(window.innerWidth<=480){
+        document.getElementById('Navbar').style.display='none';
+       }
+
+        else if(window.scrollY>=tnh+ibh)
         {
         document.getElementById('Navbar').style.display='grid';
         }
