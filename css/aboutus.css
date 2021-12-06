@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    padding:0;
+    margin: 0; 
+}
+.page_title{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(175, 175, 175);
+}
+.page_title>img{
+    height: 100%;
+    width: 100%;
+    filter: blur(1px);
+}
+.page_title::before{
+    content: "About Us";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.568);
+    z-index: 1;
+    font-size: 3rem;
+    color: white;
+    text-decoration: underline;
+}
+.content{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    padding-bottom: 100px;
+    background-color: rgb(255, 255, 255);
+}
+.image{
+    width: 40%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+.image>img{
+    width: 90%;
+    height: 90%;
+    margin-top: 20px;
+}
+.info{
+    width: 60%;
+    height: 80vh;
+}
+.info>h2{
+    margin: 20px 0px;
+    text-decoration: underline;
+}
+.info>p{
+    height: fit-content;
+    width: 90%;
+    margin: auto;
+}
+.ceo_card{
+    height: 50%;
+    width: fit-content;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(235, 235, 235); */
+    background: linear-gradient(45deg, rgb(245, 245, 245) 90%, red 10%);
+    box-shadow: 0px 0px 6px 3px rgb(29, 29, 29);
+}
+.ceo{
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 34%;
+    display: flex;
+    /* border-bottom: 1px solid black; */
+}
+
+.svg_icon{
+   height: 70%;
+    width: 10%;
+    margin: auto 0;
+    fill: red;
+}
+
+.ceo>div{
+    display: block;
+    width: 50%;
+}
+
+#info_cards{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 100px;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:30px;
+    height: 100%;
+    padding: 20px 10px;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 70vh;
+    width: 100%;
+    box-shadow: 0px 0px 6px 3px black;
+    position: relative;
+    overflow-y: hidden;
+    
+}
+.cards::-webkit-scrollbar{
+    width: 0px;
+}
+.cards:hover .hover_text{
+    animation: takeup 0.3s 1 ease-in forwards;
+}
+@keyframes takeup {
+    0% {top: 82%;}
+    100% {top: 0%;}
+}
+@keyframes takedown {
+    0%{top: 0%;}
+    100%{top: 82%}
+}
+.cards .img_holder{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_holder img{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+.hover_text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    animation: takedown 0.3s 1 linear forwards;
+}
+
+.hover_text>h2{
+    display: block;
+    background-color: red;
+    color: white;
+    width:100%;
+    height: fit-content;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0px 1px 5px 3px black;
+}
+.hover_text>p{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.hover_text li{
+  list-style: disc;
+  font-size: 1.2rem;
+    margin: 10px 0px;
+}
+
+/* 
+.info_cards{
+    height: fit-content;
+    width: 100%;
+}
+.info_cards_row1{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(207, 207, 207);
+}
+.info_cards_row1 .info_card{
+    height: 60vh;
+    width: 25%;
+    background-color: white;
+    margin: auto;
+    z-index: 1;
+    margin-top: -150px;
+    box-shadow: 0px 0px 8px 3px black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+.info_cards_row2 .info_card{
+    height: 60vh;
+    width: 25%;
+    background-color: white;
+    margin:50px auto;
+    box-shadow: 0px 0px 8px 3px black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.info_card>h3{
+    height: fit-content;
+    width: 100%;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 2rem;
+    background-color: red;
+}
+.info_card>p{
+    height: fit-content;
+    width: fit-content;
+    margin: auto 20px;
+    color: black;
+}
+.info_card>ul{
+    height: fit-content;
+    width: fit-content;
+    margin: auto 20px;
+    color: black;
+
+}
+.info_card>ul>li{
+    margin: 10px;
+    color: black;
+
+} */
+@media screen and (max-width:480px) {
+    .content{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 100px;
+        background-color: rgb(255, 255, 255);
+    }
+    .image{
+        width: 40%;
+        height: 80vh;
+        display: none;
+        justify-content: center;
+    }
+    .image>img{
+        width: 90%;
+        height: 90%;
+        margin-top: 20px;
+    }
+    .info{
+        width: 100%;
+        height: 80vh;
+    }
+    .info>h2{
+        margin: 20px 15px;
+        text-decoration: underline;
+    }
+    .info>p{
+        height: fit-content;
+        width: 90%;
+        margin: auto;
+    }
+    .ceo_card{
+        height: 50%;
+        width: 90vw;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        /* background-color: rgb(235, 235, 235); */
+        background: linear-gradient(45deg, rgb(245, 245, 245) 90%, red 10%);
+        box-shadow: 0px 0px 6px 3px rgb(29, 29, 29);
+    }
+    .ceo{
+        justify-content:space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 34%;
+        display: flex;
+        /* border-bottom: 1px solid black; */
+    }
+    
+    .svg_icon{
+       height: 70%;
+        width: 10%;
+        margin: auto 0;
+        fill: red;
+    }
+    
+    .ceo>div{
+        display: block;
+        width: 50%;
+    }
+    
+    #info_cards{
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 100px;
+    
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:30px;
+        height: 100%;
+        padding: 20px 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards{
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        background-color: white;
+        max-height: 60vh;
+        width: 80%;
+        box-shadow: 0px 0px 6px 3px black;
+        position: relative;
+        overflow-y: hidden;
+        
+    }
+    
+}

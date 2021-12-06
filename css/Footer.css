@@ -1,0 +1,117 @@
+
+.footer{
+    position: relative;
+    width: inherit;
+    height: fit-content;
+    padding-top:20px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #2e2e2e; */
+    background: url("../photo/footer-background.jpg");
+    background-size: 100% 100%;
+    /* filter: drop-shadow(20px); */
+    color: #fff;
+}
+
+.footer_one{
+    display: grid;
+    grid-template-columns:1fr 1fr 2fr;
+    width:90%;
+    margin: 20px auto;
+    gap:0px 5vw;
+
+}
+.footer_one>div{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.footer span{
+    margin:5px 0px;
+    width: 100%;
+}
+
+.q_contact>span>i{
+    margin: 0px 10px;
+}
+#span3{
+    display: flex;
+}
+.q_links>a{
+    margin:5px 0px;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+.q_links>a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.form{
+    width: 100%;
+    display: grid;
+    gap:5px 10px;
+    grid-template-columns: 1fr 1fr;
+}
+.form input,textarea{
+    padding: 5px;
+    width: 100%;
+}
+textarea,input:focus{
+    outline: none;
+    
+}
+#email{
+    grid-column:1/ span 2;
+
+}
+#textarea{
+    grid-column:1/ span 2;
+}
+.btn{
+    grid-column:1/ span 2;
+
+}
+.footer_two{
+    display: flex;
+    width: inherit;
+    height: fit-content;
+    padding: 20px;
+    /* margin:20px; */
+    background-color: #1d1c1c;
+    justify-content: space-evenly;    
+}
+
+
+.footer_logo>img{
+    margin:0 30px;
+}
+
+/* footer */
+
+@media screen and (max-width:480px) {
+    .footer_one{
+        display: grid;
+        grid-template-columns:1fr;
+        width:90%;
+        margin: 20px auto;
+        gap:0px 5vw;
+    
+    }
+    .q_links{
+        margin-bottom: 30px;
+    }
+    .footer_two{
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+        height: fit-content;
+        padding: 20px;
+        /* margin:20px; */
+        background-color: #1d1c1c;
+        justify-content: space-evenly;    
+    }
+    .footer_logo>img{
+        margin:30 30px;
+    }
+}

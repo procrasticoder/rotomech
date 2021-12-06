@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/Navbar.css">
+    <link rel="stylesheet" href="../css/Footer.css">
+    <script src="https://use.fontawesome.com/1861f71565.js"></script>
+    <link rel="shortcut icon" type="image/jpg" href="../favicon.png"/>
+    <link rel="stylesheet" href="../css/contacts.css">
+    <title>Contacts</title>
+    <script>
+        localStorage.setItem("current_page","contacts");
+    </script>
+</head>
+<body>
+    <nav id="Navbar"></nav> 
+    <nav id="Navbar-mobile">
+        
+    </nav>
+    
+    <div class="heading">
+        <h1>Contact</h1>
+    </div>
+    <!-- heading -->
+    
+    <!-- container class -->
+        <div class="container">
+            
+            <div class="box">
+    
+                <div id="map" class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.7056952168946!2d76.9135237141066!3d11.060677692129033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f5fbdca3fb6b%3A0xa71c81020d929109!2sRotomech%20Industries!5e0!3m2!1sen!2sin!4v1635150301645!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14046.869700554875!2d77.3212524!3d28.337152!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1f5b5a3fb4f3932f!2sMoonex%20Technologies!5e0!3m2!1sen!2sin!4v1633923855134!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                    </div>
+    
+                <div class="contact_card">
+                    <div><span class="fa fa-mobile" ></span>
+                    </div>    
+                    <div><p >+91-9843018058</p></div>
+                    
+                    <div><span class="fa fa-map-marker "></span></div>
+                    <div>
+                        <p>
+                            5/593-b, Kuppanaickanpalayam <br>
+                            Road, Thadagam Road, Kanuvai <br>
+                            Post, Kanuvai, Coimbatore, Tamil<br>
+                            Nadu, India - 641108
+                        </p>
+                    </div>
+                                  
+                    <div><span class="fa fa-envelope"></span></div>
+                    <div><p><a href="https://www.rotomechpump.com/" style="color: #fff;">http://www.rotomechpump.com</a> </p></div>    
+                </div>
+            </div>  
+        </div>
+    
+    <footer id="Footer" class="footer">
+            <div class="footer_one">
+                <div class="q_links">
+                    <h3>
+                        Quick Links
+                    </h3>
+                    <a href="${index}">Home</a>
+                    <a href="${aboutUs}">About Us</a>
+                    <a href="${products}">Products</a>
+                    <a href="${contacts}">Contact</a>
+                    <div class="footerline"></div>
+                
+                </div>
+                
+                <div class="q_links">
+                    <h3>
+                        Industrial Pumps
+                    </h3>
+                    <a href="">Centrifugal Process Pump</a>
+                    <a href="">Thermic Fluid Pumps</a>
+                    <a href="">Polypropylene Pump</a>
+                    <a href="">Filter Press Pumps</a>
+                    <a href="">Back Pull Out Process Pump</a>
+                    <a href="">Horizontal Chemical Pump</a>
+                    <a href="">Process Pump & Stainless Steel Pump</a>
+                    <a href="">Horizontal Non - Clog Pump</a>
+                    <a href="">High Pressure Multistage Pumps</a>
+                    <a href="">Rotary Gear Pumps</a>
+                    <div class="footerline"></div>
+                
+                </div>
+                <div class="q_enquiry">
+                    <h3>
+                        Quick Enquiry
+                    </h3>
+                    <form name="google-sheet" method="post" id="form" class="form" action="">
+                        <input id="name"type="text" name="Name" placeholder="Name" required>
+                        <input id="telephone" type="tel" name="Mobile" id="" placeholder="Phone" required size="10" minlength="10" maxlength="10">
+                        <input id="email"type="email" name="E-mail" placeholder="Email" required>
+                       
+                        <textarea name="Message" id="textarea" cols="30" rows="5" placeholder="Leave a message for us" required></textarea>
+                        <button type="submit" name="submit" class="btn btn-success">Submit</button>
+                    </form>
+                    
+                </div>
+                </div>
+                <div class="footer_two">
+                <div class="footer_content">
+                    All Rights Reserved. Rotomech Industries (Terms of Use)<br>
+                                    <a href="https://adjointindia.com/" style="color: inherit; cursor: pointer;">Powered by AdJoint India</a>
+                
+                    <!-- Developed & Managed By Weblink.In Pvt. Ltd. -->
+                </div>
+                <div class="footer_logo">
+                    <!-- <img src="https://catalog.wlimg.com/main-common/ei.png" alt=""> -->
+                    <img style="cursor:pointer;cursor:hand" src="https://seal.starfieldtech.com/images/3/en/siteseal_sf_3_h_l_m.gif"  alt="SSL site seal - click to verify">
+                </div>
+                </div>
+        
+    </footer>
+    
+</body>
+<script src="../js/Navbar.js"></script>
+<!-- <script src="../js/Footer.js"></script> -->
+
+
+</html>

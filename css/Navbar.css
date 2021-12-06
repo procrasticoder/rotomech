@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: default;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    color: inherit;
+}
+
+
+
+/* navbar */
+#Navbar-mobile{
+    display: none;
+    }
+    
+.navbar-toggler {
+    padding: 0.25rem 0.50rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow .15s ease-in-out;
+    }
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0rem;
+}
+
+#Navbar{
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: 3fr 4fr 2fr;
+    max-width: 100vw;
+    height: fit-content;
+    background-color: transparent;
+    z-index: 100;
+    background-color:white;
+    padding: 18px 10px;
+    box-shadow: 0px 0px 6px 3px black;
+}
+
+#nav_logo img{
+    width: 80%;
+    height: 80%;
+}
+#nav_links{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    height: 100%;
+}
+#nav_links>div{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+#nav_links>div:hover{
+    cursor:progress;
+}
+#products{
+    position: relative;
+}
+.products_dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 3px black;
+
+}
+.products_dropdown a{
+    width: 100%;
+    height: 100%;
+    color: black;
+    width: 20vw;
+    padding: 5px 20px;
+    background-color: #eee;
+}
+.products_dropdown a:hover{
+    background-color: rgb(206, 202, 202);
+
+}
+#products:hover .products_dropdown{
+    display: flex;
+}
+
+#nav_search{
+    display: flex; 
+    background-color: #eee;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 8px;
+    border-radius: 100px;
+    margin: auto;
+}
+
+#nav_search input{
+    width: 85%;
+    border: 0px;
+    padding: 2px 2px;
+    background-color: #eee;
+
+}
+
+#nav_search input:focus{
+    outline: none;
+}
+
+/* navbar */
+
+#section{
+    width: 100vw;
+    height: 400px;
+    /* background-color: blueviolet; */
+}
+@media screen and (max-width:480px) {
+    #Navbar{
+        display: none;
+    }
+    #Navbar-mobile{
+        display: block;
+    }
+    .dropdown-menu a{
+        color: inherit;
+        margin-left: 5px;
+    }
+}
