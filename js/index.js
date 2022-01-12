@@ -52,7 +52,7 @@ function right()
     
 }
 function knowMore(){
-    location.href='html/products.html'
+    location.href='aboutus.html'
 }
 function scrollUp(){
     var scrollPx=window.pageYOffset;
